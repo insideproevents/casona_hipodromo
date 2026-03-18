@@ -52,7 +52,7 @@ const locales: Local[] = [
       { label: 'Terraza', value: '40,76 m²' },
       { label: 'Superficie Municipal', value: '224,24 m²' },
     ],
-    imagen: '/images/interior-vigas.jpg',
+    imagen: './images/interior-vigas.jpg',
     destacado: true,
   },
   {
@@ -74,7 +74,7 @@ const locales: Local[] = [
       { label: 'Terraza', value: '30,50 m²' },
       { label: 'Superficie Municipal', value: '66,24 m²' },
     ],
-    imagen: '/images/escaleras.jpg',
+    imagen: './images/escaleras.jpg',
   },
   {
     id: '2',
@@ -96,7 +96,7 @@ const locales: Local[] = [
       { label: 'Piso 3 - Terraza', value: '3,00 m²' },
       { label: 'Superficie Municipal', value: '128,58 m²' },
     ],
-    imagen: '/images/fachada-lateral.jpg',
+    imagen: './images/fachada-lateral.jpg',
   },
 ];
 
