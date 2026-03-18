@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'inversionistas@ileben.cl',
-    href: 'mailto:inversionistas@ileben.cl',
+    value: 'ventas@marielaguilera.cl',
+    href: 'mailto:ventas@marielaguilera.cl',
   },
   {
     icon: MapPin,

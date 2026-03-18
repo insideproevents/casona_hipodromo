@@ -35,7 +35,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:inversionistas@ileben.cl"
+                href="mailto:ventas@marielaguilera.cl"
                 className="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-[#C9A962] hover:bg-[#C9A962]/10 transition-all"
               >
                 <Mail className="w-5 h-5" />
@@ -82,11 +82,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:inversionistas@ileben.cl"
+                  href="mailto:ventas@marielaguilera.cl"
                   className="flex items-center gap-3 text-white/60 hover:text-[#C9A962] transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span className="font-body text-sm">inversionistas@ileben.cl</span>
+                  <span className="font-body text-sm">ventas@marielaguilera.cl</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-white/60">

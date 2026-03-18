@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,15 +57,6 @@ export default function Navigation() {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="tel:+56952269921"
-            className={`flex items-center gap-2 font-body text-sm transition-colors ${
-              isScrolled ? 'text-[#1A1A1A]' : 'text-white'
-            }`}
-          >
-            <Phone className="w-4 h-4" />
-            <span>+56 9 5226 9921</span>
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -96,13 +87,6 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
-          <a
-            href="tel:+56952269921"
-            className="flex items-center gap-2 font-body text-sm text-[#C9A962] pt-4 border-t border-[#E8E4DC]"
-          >
-            <Phone className="w-4 h-4" />
-            <span>+56 9 5226 9921</span>
-          </a>
         </div>
       </div>
     </nav>

@@ -9,16 +9,10 @@ const galleryImages = [
     description: 'Vista frontal de la casona restaurada con sus características ventanas de madera y balcones de hierro forjado.',
   },
   {
-    src: './images/escalera_nueva.jpg',
-    alt: 'Escaleras Interiores',
-    caption: 'Escalera Principal',
-    description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
-  },
-  {
-    src: './images/aerea_casona.png',
-    alt: 'Vista Aérea de la Casona',
-    caption: 'Vista Aérea',
-    description: 'Perspectiva aérea que revela la distribución de la casona y su techo de tejas tradicionales.',
+    src: './images/fachada-lateral.jpg',
+    alt: 'Vista Lateral',
+    caption: 'Perspectiva Lateral',
+    description: 'Ángulo que muestra la arquitectura única de la construcción y su integración con el entorno urbano.',
   },
   {
     src: './images/salon.png',
@@ -33,22 +27,22 @@ const galleryImages = [
     description: 'Detalles de los característicos ventanales de la época.',
   },
   {
-    src: './images/ilustracion-epoca.jpg',
-    alt: 'Ilustración de la Época',
-    caption: 'Ilustración Histórica',
-    description: 'Representación artística del Hipódromo en la época.',
-  },
-  {
-    src: './images/fachada-lateral.jpg',
-    alt: 'Vista Lateral',
-    caption: 'Perspectiva Lateral',
-    description: 'Ángulo que muestra la arquitectura única de la construcción y su integración con el entorno urbano.',
+    src: './images/escalera_nueva.jpg',
+    alt: 'Escaleras Interiores',
+    caption: 'Escaleras Interiores',
+    description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
   },
   {
     src: './images/interior-vigas.jpg',
     alt: 'Interior con Vigas',
     caption: 'Detalles Arquitectónicos',
     description: 'Vigas de madera originales que dan testimonio de la construcción del siglo XIX.',
+  },
+  {
+    src: './images/ilustracion-epoca.jpg',
+    alt: 'Ilustración de la Época',
+    caption: 'Detalles Arquitectónicos',
+    description: 'Elementos arquitectónicos originales que dan testimonio de la construcción del siglo XIX.',
   },
   {
     src: './images/restaurante-vista.jpg',
@@ -63,16 +57,16 @@ const galleryImages = [
     description: 'Distribución del segundo nivel del edificio.',
   },
   {
-    src: './images/planos_locales.jpg',
-    alt: 'Planos de Locales',
-    caption: 'Planos Comerciales',
-    description: 'Distribución de los locales comerciales disponibles.',
-  },
-  {
     src: './images/planos_pisos.jpg',
     alt: 'Planos de Pisos',
     caption: 'Planos de Pisos',
     description: 'Distribución por niveles del edificio.',
+  },
+  {
+    src: './images/planos_locales.jpg',
+    alt: 'Planos de Locales',
+    caption: 'Planos Comerciales',
+    description: 'Distribución de los locales comerciales disponibles.',
   },
 ];
 
