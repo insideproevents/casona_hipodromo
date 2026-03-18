@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html
+    - npm run build
+    - /bin/cp -r dist/* $DEPLOYPATH/
+    
+# Note: 
+# 1. Replace "username" with your actual cPanel username
+# 2. Make sure your hosting provider has Node.js installed
+# 3. Run 'npm install' in your cPanel terminal first if needed
