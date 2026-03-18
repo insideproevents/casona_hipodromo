@@ -129,11 +129,18 @@ export default function GaleriaSection() {
               style={{ transitionDelay: `${200 + index * 100}ms` }}
               onClick={() => openLightbox(index)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden border-4 border-[#C9A962] p-1 bg-white shadow-lg">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                
+                {/* Marco frame */}
+                <img
+                  src="./images/marco.png"
+                  alt="Marco"
+                  className="absolute inset-0 w-full h-full object-contain pointer-events-none z-10"
                 />
                 
                 {/* Overlay */}
