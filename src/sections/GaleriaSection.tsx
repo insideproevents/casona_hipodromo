@@ -9,16 +9,52 @@ const galleryImages = [
     description: 'Vista frontal de la casona restaurada con sus características ventanas de madera y balcones de hierro forjado.',
   },
   {
+    src: './images/aerea_casona.png',
+    alt: 'Vista Aérea de la Casona',
+    caption: 'Vista Aérea',
+    description: 'Perspectiva aérea que revela la distribución de la casona y su techo de tejas tradicionales.',
+  },
+  {
+    src: './images/salon.png',
+    alt: 'Salón Principal',
+    caption: 'Salón Principal',
+    description: 'Espacio amplio y luminoso ideal para eventos y reuniones.',
+  },
+  {
+    src: './images/ventanales.png',
+    alt: 'Ventanales Históricos',
+    caption: 'Ventanales',
+    description: 'Detalles de los característicos ventanales de la época.',
+  },
+  {
+    src: './images/ilustracion-epoca.jpg',
+    alt: 'Ilustración de la Época',
+    caption: 'Ilustración Histórica',
+    description: 'Representación artística del Hipódromo en la época.',
+  },
+  {
+    src: './images/plano_superior.png',
+    alt: 'Plano Superior',
+    caption: 'Plano Nivel Superior',
+    description: 'Distribución del segundo nivel del edificio.',
+  },
+  {
+    src: './images/planos_locales.png',
+    alt: 'Planos de Locales',
+    caption: 'Planos Comerciales',
+    description: 'Distribución de los locales comerciales disponibles.',
+  },
+  {
+    src: './images/pisos.jpeg',
+    alt: 'Planos de Pisos',
+    caption: 'Planos de Pisos',
+    description: 'Distribución por niveles del edificio.',
+  },
+  {
     src: './images/fachada-lateral.jpg',
     alt: 'Vista Lateral',
     caption: 'Perspectiva Lateral',
     description: 'Ángulo que muestra la arquitectura única de la construcción y su integración con el entorno urbano.',
-  },
-  {
-    src: './images/vista-aerea.jpg',
-    alt: 'Vista Aérea',
-    caption: 'Vista Panorámica',
-    description: 'Perspectiva aérea que revela la distribución de la casona y su techo de tejas tradicionales.',
   },
   {
     src: './images/interior-vigas.jpg',
