@@ -16,26 +16,18 @@ const contactInfo = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+56 9 8189 2341',
-    href: 'https://wa.me/56981892341',
-  },
-  {
-    icon: MessageCircle,
-    label: 'WhatsApp',
-    value: '+56 9 8960 8591',
-    href: 'https://wa.me/56989608591',
+    values: [
+      { value: '+56 9 8189 2341', href: 'https://wa.me/56981892341' },
+      { value: '+56 9 8960 8591', href: 'https://wa.me/56989608591' },
+    ],
   },
   {
     icon: Phone,
     label: 'Teléfono',
-    value: '+56 9 8189 2341',
-    href: 'tel:+56981892341',
-  },
-  {
-    icon: Phone,
-    label: 'Teléfono',
-    value: '+56 9 8960 8591',
-    href: 'tel:+56989608591',
+    values: [
+      { value: '+56 9 8189 2341', href: 'tel:+56981892341' },
+      { value: '+56 9 8960 8591', href: 'tel:+56989608591' },
+    ],
   },
   {
     icon: Mail,
@@ -152,7 +144,25 @@ export default function ContactoSection() {
                     <p className="font-body text-xs text-[#8B8680] uppercase tracking-wider mb-1">
                       {info.label}
                     </p>
-                    {info.href ? (
+                    {'values' in info && info.values ? (
+                      <div className="flex flex-col gap-1">
+                        {info.values.map((item, i) => (
+                          item.href ? (
+                            <a
+                              key={i}
+                              href={item.href}
+                              target={item.href.startsWith('http') ? '_blank' : undefined}
+                              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                              className="font-body text-[#1A1A1A] hover:text-[#C9A962] transition-colors"
+                            >
+                              {item.value}
+                            </a>
+                          ) : (
+                            <p key={i} className="font-body text-[#1A1A1A]">{item.value}</p>
+                          )
+                        ))}
+                      </div>
+                    ) : info.href ? (
                       <a
                         href={info.href}
                         target={info.href.startsWith('http') ? '_blank' : undefined}

@@ -1,4 +1,4 @@
-import { Landmark, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { Landmark, Instagram, Linkedin, Mail, Phone, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -71,6 +71,34 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-lg mb-6">Contacto</h4>
             <ul className="space-y-4">
+              <li>
+                <span className="font-body text-xs text-[#C9A962] uppercase tracking-wider">WhatsApp</span>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/56981892341"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-white/60 hover:text-[#C9A962] transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span className="font-body text-sm">+56 9 8189 2341</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/56989608591"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-white/60 hover:text-[#C9A962] transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span className="font-body text-sm">+56 9 8960 8591</span>
+                </a>
+              </li>
+              <li className="pt-2">
+                <span className="font-body text-xs text-[#C9A962] uppercase tracking-wider">Teléfono</span>
+              </li>
               <li>
                 <a
                   href="tel:+56981892341"
