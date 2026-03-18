@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,10 +14,28 @@ import {
 
 const contactInfo = [
   {
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    value: '+569 81892341',
+    href: 'https://wa.me/56981892341',
+  },
+  {
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    value: '+569 89608591',
+    href: 'https://wa.me/56989608591',
+  },
+  {
     icon: Phone,
     label: 'Teléfono',
-    value: '+56 9 5226 9921',
-    href: 'tel:+56952269921',
+    value: '+569 81892341',
+    href: 'tel:+56981892341',
+  },
+  {
+    icon: Phone,
+    label: 'Teléfono',
+    value: '+569 89608591',
+    href: 'tel:+56989608591',
   },
   {
     icon: Mail,
