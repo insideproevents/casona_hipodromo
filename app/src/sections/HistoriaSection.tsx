@@ -82,8 +82,8 @@ export default function HistoriaSection() {
               <img
                 src="./images/marco.png"
                 alt="Marco"
-                className="absolute -inset-8 w-[calc(100%+4rem)] h-[calc(100%+4rem)] -z-10 object-contain"
-                style={{ margin: '-2rem' }}
+                className="absolute -inset-12 w-[calc(100%+6rem)] h-[calc(100%+6rem)] -z-10 object-contain"
+                style={{ margin: '-3rem' }}
               />
               {/* Frame Decoration */}
               <div className="absolute -inset-4 border border-[#C9A962]/30 -z-10" />
