@@ -3,37 +3,37 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
   {
-    src: '/images/fachada-frontal.jpg',
+    src: './images/fachada-frontal.jpg',
     alt: 'Fachada Principal de la Casona',
     caption: 'Fachada Principal',
     description: 'Vista frontal de la casona restaurada con sus características ventanas de madera y balcones de hierro forjado.',
   },
   {
-    src: '/images/fachada-lateral.jpg',
+    src: './images/fachada-lateral.jpg',
     alt: 'Vista Lateral',
     caption: 'Perspectiva Lateral',
     description: 'Ángulo que muestra la arquitectura única de la construcción y su integración con el entorno urbano.',
   },
   {
-    src: '/images/vista-aerea.jpg',
+    src: './images/vista-aerea.jpg',
     alt: 'Vista Aérea',
     caption: 'Vista Panorámica',
     description: 'Perspectiva aérea que revela la distribución de la casona y su techo de tejas tradicionales.',
   },
   {
-    src: '/images/interior-vigas.jpg',
+    src: './images/interior-vigas.jpg',
     alt: 'Interior con Vigas',
     caption: 'Detalles Arquitectónicos',
     description: 'Vigas de madera originales que dan testimonio de la construcción del siglo XIX.',
   },
   {
-    src: '/images/escaleras.jpg',
+    src: './images/escaleras.jpg',
     alt: 'Escaleras Interiores',
     caption: 'Escalera Principal',
     description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
   },
   {
-    src: '/images/restaurante-vista.jpg',
+    src: './images/restaurante-vista.jpg',
     alt: 'Vista del Restaurante',
     caption: 'Vista al Hipódromo',
     description: 'Ilustración del potencial del local con vista panorámica al Hipódromo Chile.',

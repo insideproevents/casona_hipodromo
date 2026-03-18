@@ -47,7 +47,7 @@ export default function UbicacionSection() {
       {/* Background Map Image */}
       <div className="absolute inset-0 opacity-20">
         <img
-          src="/images/mapa-ubicacion.jpg"
+          src="./images/mapa-ubicacion.jpg"
           alt="Mapa de ubicación"
           className="w-full h-full object-cover"
         />

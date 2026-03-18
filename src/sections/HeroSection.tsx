@@ -27,7 +27,7 @@ export default function HeroSection() {
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 parallax">
         <img
-          src="/images/fachada-frontal.jpg"
+          src="./images/fachada-frontal.jpg"
           alt="Casona Hipódromo 1808"
           className="w-full h-full object-cover"
         />
