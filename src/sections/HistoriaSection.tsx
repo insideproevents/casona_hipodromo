@@ -86,7 +86,7 @@ export default function HistoriaSection() {
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-white p-6 shadow-xl">
               <div className="text-center">
-                <span className="font-display text-4xl text-[#C9A962]">1817</span>
+                <span className="font-display text-2xl text-[#C9A962]">1817</span>
                 <p className="font-body text-xs text-[#8B8680] tracking-wider uppercase mt-1">
                   Año de Construcción
                 </p>
