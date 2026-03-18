@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/marielaa/casona.marielaguilera.cl/web
-    - /bin/cp -r dist/* $DEPLOYPATH/
-    
-# Nota: Este método copia los archivos ya compilados en la carpeta dist
-# Asegúrate de que la carpeta dist esté actualizada en git
+    - /bin/cp -R dist/* $DEPLOYPATH/
