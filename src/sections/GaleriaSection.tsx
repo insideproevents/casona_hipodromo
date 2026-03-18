@@ -33,24 +33,6 @@ const galleryImages = [
     description: 'Representación artística del Hipódromo en la época.',
   },
   {
-    src: './images/plano_superior.png',
-    alt: 'Plano Superior',
-    caption: 'Plano Nivel Superior',
-    description: 'Distribución del segundo nivel del edificio.',
-  },
-  {
-    src: './images/planos_locales.png',
-    alt: 'Planos de Locales',
-    caption: 'Planos Comerciales',
-    description: 'Distribución de los locales comerciales disponibles.',
-  },
-  {
-    src: './images/pisos.jpeg',
-    alt: 'Planos de Pisos',
-    caption: 'Planos de Pisos',
-    description: 'Distribución por niveles del edificio.',
-  },
-  {
     src: './images/fachada-lateral.jpg',
     alt: 'Vista Lateral',
     caption: 'Perspectiva Lateral',
@@ -73,6 +55,24 @@ const galleryImages = [
     alt: 'Vista del Restaurante',
     caption: 'Vista al Hipódromo',
     description: 'Ilustración del potencial del local con vista panorámica al Hipódromo Chile.',
+  },
+  {
+    src: './images/plano_superior.jpg',
+    alt: 'Plano Superior',
+    caption: 'Plano Nivel Superior',
+    description: 'Distribución del segundo nivel del edificio.',
+  },
+  {
+    src: './images/planos_locales.jpg',
+    alt: 'Planos de Locales',
+    caption: 'Planos Comerciales',
+    description: 'Distribución de los locales comerciales disponibles.',
+  },
+  {
+    src: './images/planos_pisos.jpg',
+    alt: 'Planos de Pisos',
+    caption: 'Planos de Pisos',
+    description: 'Distribución por niveles del edificio.',
   },
 ];
 
