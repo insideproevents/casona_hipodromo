@@ -74,7 +74,7 @@ export default function HistoriaSection() {
           <div className={`relative transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="relative">
               <img
-                src="./images/ilustracion-epoca.jpg"
+                src="./images/ilustracion-epoca.png"
                 alt="Ilustración histórica del Hipódromo"
                 className="w-full rounded-sm shadow-2xl"
               />
