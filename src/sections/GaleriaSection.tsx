@@ -140,7 +140,7 @@ export default function GaleriaSection() {
                 <img
                   src="./images/marco.png"
                   alt="Marco"
-                  className="absolute inset-0 w-full h-full object-contain pointer-events-none z-10"
+                  className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10"
                 />
                 
                 {/* Overlay */}
