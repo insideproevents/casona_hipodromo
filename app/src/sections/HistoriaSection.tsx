@@ -78,13 +78,6 @@ export default function HistoriaSection() {
                 alt="Ilustración histórica del Hipódromo"
                 className="w-full rounded-sm shadow-2xl"
               />
-              {/* Marco PNG - más grande que la imagen */}
-              <img
-                src="./images/marco.png"
-                alt="Marco"
-                className="absolute -inset-12 w-[calc(100%+6rem)] h-[calc(100%+6rem)] -z-10 object-contain"
-                style={{ margin: '-3rem' }}
-              />
               {/* Frame Decoration */}
               <div className="absolute -inset-4 border border-[#C9A962]/30 -z-10" />
               <div className="absolute -inset-8 border border-[#C9A962]/10 -z-20" />
