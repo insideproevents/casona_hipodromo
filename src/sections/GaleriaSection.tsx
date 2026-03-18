@@ -9,6 +9,12 @@ const galleryImages = [
     description: 'Vista frontal de la casona restaurada con sus características ventanas de madera y balcones de hierro forjado.',
   },
   {
+    src: './images/escalera_nueva.jpg',
+    alt: 'Escaleras Interiores',
+    caption: 'Escalera Principal',
+    description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
+  },
+  {
     src: './images/aerea_casona.png',
     alt: 'Vista Aérea de la Casona',
     caption: 'Vista Aérea',
@@ -43,12 +49,6 @@ const galleryImages = [
     alt: 'Interior con Vigas',
     caption: 'Detalles Arquitectónicos',
     description: 'Vigas de madera originales que dan testimonio de la construcción del siglo XIX.',
-  },
-  {
-    src: './images/escalera_nueva.jpg',
-    alt: 'Escaleras Interiores',
-    caption: 'Escalera Principal',
-    description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
   },
   {
     src: './images/restaurante-vista.jpg',
