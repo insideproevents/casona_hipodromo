@@ -27,7 +27,7 @@ const galleryImages = [
     description: 'Vigas de madera originales que dan testimonio de la construcción del siglo XIX.',
   },
   {
-    src: './images/escaleras.jpg',
+    src: './images/escalera_nueva.jpg',
     alt: 'Escaleras Interiores',
     caption: 'Escalera Principal',
     description: 'Elegante escalera que conecta los diferentes niveles de la casona.',
