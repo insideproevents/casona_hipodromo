@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/marielaa/casona.marielaguilera.cl/web
-    - /bin/cp -R dist/* $DEPLOYPATH/
