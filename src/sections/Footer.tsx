@@ -77,7 +77,7 @@ export default function Footer() {
                   className="flex items-center gap-3 text-white/60 hover:text-[#C9A962] transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-body text-sm">+569 81892341</span>
+                  <span className="font-body text-sm">+56 9 8189 2341</span>
                 </a>
               </li>
               <li>
@@ -86,7 +86,7 @@ export default function Footer() {
                   className="flex items-center gap-3 text-white/60 hover:text-[#C9A962] transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-body text-sm">+569 89608591</span>
+                  <span className="font-body text-sm">+56 9 8960 8591</span>
                 </a>
               </li>
               <li>

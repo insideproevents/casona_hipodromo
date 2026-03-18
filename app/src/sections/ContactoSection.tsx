@@ -16,25 +16,25 @@ const contactInfo = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+569 81892341',
+    value: '+56 9 8189 2341',
     href: 'https://wa.me/56981892341',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+569 89608591',
+    value: '+56 9 8960 8591',
     href: 'https://wa.me/56989608591',
   },
   {
     icon: Phone,
     label: 'Teléfono',
-    value: '+569 81892341',
+    value: '+56 9 8189 2341',
     href: 'tel:+56981892341',
   },
   {
     icon: Phone,
     label: 'Teléfono',
-    value: '+569 89608591',
+    value: '+56 9 8960 8591',
     href: 'tel:+56989608591',
   },
   {
