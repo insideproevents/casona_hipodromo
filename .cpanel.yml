@@ -2,10 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/marielaa/casona.marielaguilera.cl/web
-    - npm run build
     - /bin/cp -r dist/* $DEPLOYPATH/
     
-# Note: 
-# 1. Replace "username" with your actual cPanel username
-# 2. Make sure your hosting provider has Node.js installed
-# 3. Run 'npm install' in your cPanel terminal first if needed
+# Nota: Este método copia los archivos ya compilados en la carpeta dist
+# Asegúrate de que la carpeta dist esté actualizada en git
