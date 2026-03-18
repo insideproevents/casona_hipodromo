@@ -129,7 +129,7 @@ export default function GaleriaSection() {
               style={{ transitionDelay: `${200 + index * 100}ms` }}
               onClick={() => openLightbox(index)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden border-4 border-[#C9A962] p-1 bg-white shadow-lg">
                 <img
                   src={image.src}
                   alt={image.alt}
