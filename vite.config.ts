@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/casona_hipodromo/',
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
