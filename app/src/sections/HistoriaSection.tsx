@@ -76,7 +76,7 @@ export default function HistoriaSection() {
               <img
                 src="./images/ilustracion-epoca.png"
                 alt="Ilustración histórica del Hipódromo"
-                className="w-full rounded-sm shadow-2xl"
+                className="w-[120%] rounded-sm shadow-2xl"
               />
               {/* Frame Decoration */}
               <div className="absolute -inset-4 border border-[#C9A962]/30 -z-10" />
