@@ -102,9 +102,9 @@ const locales: Local[] = [
     name: 'Casona Completa',
     subtitle: 'La Casona Completa',
     superficie: 385,
-    precio: 19260,
+    precio: 25680,
     precioOriginal: 25680,
-    descuento: 25,
+    descuento: 0,
     caracteristicas: {
       pisos: 2,
       baños: 4,
@@ -148,9 +148,11 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           
           {/* Discount Badge */}
+          {local.descuento > 0 && (
           <div className="absolute top-4 right-4 bg-[#B8735A] text-white px-4 py-2 rounded-full">
             <span className="font-display text-lg">-{local.descuento}%</span>
           </div>
+        )}
           
           {/* Title Overlay */}
           <div className="absolute bottom-4 left-6">
@@ -268,9 +270,11 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
                         </span>
                       </div>
                       <div className="text-right">
+                        {local.descuento > 0 && (
                         <span className="bg-[#B8735A] text-white px-4 py-2 font-display text-lg">
                           -{local.descuento}%
                         </span>
+                        )}
                       </div>
                     </div>
                   </div>
