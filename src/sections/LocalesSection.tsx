@@ -119,7 +119,7 @@ const locales: Local[] = [
       { label: 'Terrazas', value: '71,26 m²' },
       { label: 'Niveles 2', value: 'completamente funcionales' },
       { label: 'Baños', value: '4' },
-      { label: 'Bodega', value: '1 Bodega Subterránea' },
+      { label: 'Bodega 1', value: 'Subterránea' },
     ],
     imagen: './images/1C_plano.jpg',
   },
