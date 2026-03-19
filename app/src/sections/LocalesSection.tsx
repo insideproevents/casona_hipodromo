@@ -108,9 +108,9 @@ const locales: Local[] = [
     descuento: 25,
     caracteristicas: {
       pisos: 2,
-      baños: 2,
-      estacionamiento: '1 espacio minusválidos',
-      extras: ['Bodega subterránea', 'Terraza'],
+      baños: 4,
+      estacionamiento: '3 Estacionamientos (Incluye PMR)',
+      extras: ['1 Bodega Subterránea', '71,26 m² de terrazas + Área Exterior con paisajismo'],
     },
     detalles: [
       { label: 'Primer Piso', value: '90,31 m²' },
@@ -118,6 +118,7 @@ const locales: Local[] = [
       { label: 'Bodega Subterránea', value: '23,94 m²' },
       { label: 'Terraza', value: '40,76 m²' },
       { label: 'Superficie Municipal', value: '224,24 m²' },
+      { label: 'Configuración', value: 'Versátil para restaurante, cervecería, club, eventos o marca' },
     ],
     imagen: './images/1C_plano.jpg',
   },
@@ -179,7 +180,7 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
                 <span className="font-display text-sm text-[#C9A962]">{local.caracteristicas.pisos}</span>
               </div>
               <span className="font-body text-xs text-[#8B8680]">
-                {local.caracteristicas.pisos === 1 ? 'Piso' : 'Pisos'}
+                {local.id === 'casona-completa' ? '2 Niveles completamente funcionales' : (local.caracteristicas.pisos === 1 ? 'Piso' : 'Pisos')}
               </span>
             </div>
             <div className="flex items-center gap-2">
