@@ -53,7 +53,6 @@ const locales: Local[] = [
       { label: 'Superficie Municipal', value: '224,24 m²' },
     ],
     imagen: './images/1C_plano.jpg',
-    destacado: true,
   },
   {
     id: '2c',
