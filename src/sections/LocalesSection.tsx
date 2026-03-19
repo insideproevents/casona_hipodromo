@@ -117,7 +117,7 @@ const locales: Local[] = [
       { label: '2do Piso', value: '133,93 m²' },
       { label: 'Bodega', value: '23,94 m²' },
       { label: 'Terrazas', value: '71,26 m²' },
-      { label: 'Niveles', value: '2 Niveles completamente funcionales' },
+      { label: 'Niveles 2', value: 'completamente funcionales' },
       { label: 'Baños', value: '4' },
       { label: 'Bodega', value: '1 Bodega Subterránea' },
     ],
