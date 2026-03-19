@@ -102,7 +102,7 @@ const locales: Local[] = [
     id: 'casona-completa',
     name: 'Casona Completa',
     subtitle: 'La Casona Completa',
-    superficie: 288.98,
+    superficie: 385,
     precio: 19260,
     precioOriginal: 25680,
     descuento: 25,
