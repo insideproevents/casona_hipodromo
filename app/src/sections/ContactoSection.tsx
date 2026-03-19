@@ -85,6 +85,8 @@ export default function ContactoSection() {
     
     const formDataObj = new FormData();
     formDataObj.append("access_key", "0bf3d904-36f1-4240-9d21-b814acfd64fb");
+    formDataObj.append("email", "insideproevents@gmail.com");
+    formDataObj.append("cc", "venta@marielaguilera.cl");
     formDataObj.append("nombre", formData.nombre);
     formDataObj.append("email", formData.email);
     formDataObj.append("telefono", formData.telefono);
