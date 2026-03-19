@@ -119,7 +119,7 @@ const locales: Local[] = [
       { label: 'Terraza', value: '40,76 m²' },
       { label: 'Superficie Municipal', value: '224,24 m²' },
     ],
-    imagen: './images/1C_plano.jpg',
+    imagen: './images/fachada-frontal.jpg',
   },
 ];
 
