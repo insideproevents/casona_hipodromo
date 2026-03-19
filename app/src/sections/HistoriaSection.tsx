@@ -84,7 +84,7 @@ export default function HistoriaSection() {
             </div>
             
             {/* Floating Badge */}
-            <div className="absolute -bottom-10 -right-6 bg-white p-10 shadow-xl">
+            <div className="absolute -bottom-8 -right-6 bg-white p-4 shadow-xl">
               <div className="text-center">
                 <span className="font-display text-6xl text-[#C9A962]">1817</span>
                 <p className="font-body text-xs text-[#8B8680] tracking-wider uppercase mt-1">
