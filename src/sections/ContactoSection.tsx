@@ -53,6 +53,7 @@ export default function ContactoSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formResult, setFormResult] = useState<string>("");
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -79,12 +80,27 @@ export default function ContactoSection() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+    
+    const formDataObj = new FormData();
+    formDataObj.append("access_key", "0bf3d904-36f1-4240-9d21-b814acfd64fb");
+    formDataObj.append("nombre", formData.nombre);
+    formDataObj.append("email", formData.email);
+    formDataObj.append("telefono", formData.telefono);
+    formDataObj.append("local", formData.local);
+    formDataObj.append("mensaje", formData.mensaje);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataObj
+    });
+
+    const data = await response.json();
+    
+    if (data.success) {
+      setIsSubmitted(true);
+      setFormResult("¡Mensaje enviado exitosamente! Nos contactaremos contigo pronto.");
       setFormData({
         nombre: '',
         email: '',
@@ -92,7 +108,13 @@ export default function ContactoSection() {
         local: '',
         mensaje: '',
       });
-    }, 3000);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormResult("");
+      }, 5000);
+    } else {
+      setFormResult("Error al enviar el mensaje. Por favor intenta nuevamente.");
+    }
   };
 
   return (
@@ -211,7 +233,7 @@ export default function ContactoSection() {
                     ¡Mensaje Enviado!
                   </h4>
                   <p className="font-body text-[#8B8680]">
-                    Nos contactaremos contigo pronto.
+                    {formResult || "Nos contactaremos contigo pronto."}
                   </p>
                 </div>
               ) : (
