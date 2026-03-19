@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Maximize, Bath, Car, Tag, ArrowRight } from 'lucide-react';
+import { Maximize, Bath, Car, Tag, ArrowRight, X, ZoomIn } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -124,7 +124,7 @@ const locales: Local[] = [
   },
 ];
 
-function LocalCard({ local, index, isVisible }: { local: Local; index: number; isVisible: boolean }) {
+function LocalCard({ local, index, isVisible, openLightbox }: { local: Local; index: number; isVisible: boolean; openLightbox: (src: string) => void }) {
   return (
     <div
       className={`relative transition-all duration-700 ${
@@ -246,11 +246,16 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
                   </DialogTitle>
                 </DialogHeader>
                 <div className="mt-4">
-                  <img
-                    src={local.imagen}
-                    alt={local.name}
-                    className="w-full h-48 object-cover rounded-sm mb-6"
-                  />
+                  <div className="relative group cursor-pointer" onClick={() => openLightbox(local.imagen)}>
+                    <img
+                      src={local.imagen}
+                      alt={local.name}
+                      className="w-full h-48 object-cover rounded-sm mb-6"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-sm mb-6">
+                      <ZoomIn className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     {local.detalles.map((detalle) => (
                       <div key={detalle.label} className="flex justify-between py-2 border-b border-[#E8E4DC]">
@@ -296,6 +301,17 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
 export default function LocalesSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openLightbox = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+    document.body.style.overflow = 'auto';
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -352,7 +368,7 @@ export default function LocalesSection() {
         {/* Locales Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {locales.map((local, index) => (
-            <LocalCard key={local.id} local={local} index={index} isVisible={isVisible} />
+            <LocalCard key={local.id} local={local} index={index} isVisible={isVisible} openLightbox={openLightbox} />
           ))}
         </div>
 
@@ -367,6 +383,31 @@ export default function LocalesSection() {
           </a>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors z-10"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <div 
+            className="max-w-4xl max-h-[80vh] px-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={selectedImage}
+              alt="Imagen ampliada"
+              className="max-w-full max-h-[70vh] object-contain"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
