@@ -272,7 +272,7 @@ export default function ContactoSection() {
                         <SelectTrigger className="border-[#E8E4DC] focus:border-[#C9A962] focus:ring-[#C9A962]/20">
                           <SelectValue placeholder="Selecciona un local" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="bg-white">
                           <SelectItem value="1c">Local 1C - Casona (288,98 m²)</SelectItem>
                           <SelectItem value="2c">Local 2C - Casona (96,74 m²)</SelectItem>
                           <SelectItem value="2">Local 2 - Strip Center (128,58 m²)</SelectItem>
