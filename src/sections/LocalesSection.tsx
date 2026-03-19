@@ -98,6 +98,29 @@ const locales: Local[] = [
     ],
     imagen: './images/2_plano.jpg',
   },
+  {
+    id: 'casona-completa',
+    name: 'Casona Completa',
+    subtitle: 'La Casona Completa',
+    superficie: 288.98,
+    precio: 19260,
+    precioOriginal: 25680,
+    descuento: 25,
+    caracteristicas: {
+      pisos: 2,
+      baños: 2,
+      estacionamiento: '1 espacio minusválidos',
+      extras: ['Bodega subterránea', 'Terraza'],
+    },
+    detalles: [
+      { label: 'Primer Piso', value: '90,31 m²' },
+      { label: 'Segundo Piso', value: '133,93 m²' },
+      { label: 'Bodega Subterránea', value: '23,94 m²' },
+      { label: 'Terraza', value: '40,76 m²' },
+      { label: 'Superficie Municipal', value: '224,24 m²' },
+    ],
+    imagen: './images/1C_plano.jpg',
+  },
 ];
 
 function LocalCard({ local, index, isVisible }: { local: Local; index: number; isVisible: boolean }) {
@@ -314,13 +337,13 @@ export default function LocalesSection() {
             <div className="w-16 h-px bg-[#C9A962]" />
           </div>
           <p className="font-body text-white/70 max-w-2xl mx-auto">
-            Tres espacios comerciales únicos, cada uno con características especiales 
+            Cuatro espacios comerciales únicos, cada uno con características especiales 
             que preservan el encanto histórico de la casona.
           </p>
         </div>
 
         {/* Locales Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {locales.map((local, index) => (
             <LocalCard key={local.id} local={local} index={index} isVisible={isVisible} />
           ))}
