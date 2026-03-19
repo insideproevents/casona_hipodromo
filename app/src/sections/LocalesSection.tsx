@@ -118,7 +118,7 @@ const locales: Local[] = [
       { label: 'Terrazas', value: '71,26 m²' },
       { label: 'Niveles', value: '2 Totalmente funcionales' },
       { label: 'Baños', value: '4' },
-      { label: 'Bodega / 1 Subterránea', value: '23,94 m²' },
+      { label: 'Bodega /\u00A01 Subterránea', value: '23,94 m²' },
     ],
     imagen: './images/1C_plano.jpg',
   },
@@ -254,7 +254,7 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     {local.detalles.map((detalle) => (
                       <div key={detalle.label} className="flex justify-between py-2 border-b border-[#E8E4DC]">
-                        <span className="font-body text-sm text-[#8B8680]">{detalle.label}</span>
+                        <span className="font-body text-sm text-[#8B8680] whitespace-nowrap">{detalle.label}</span>
                         <span className="font-display text-sm text-[#1A1A1A]">{detalle.value}</span>
                       </div>
                     ))}
