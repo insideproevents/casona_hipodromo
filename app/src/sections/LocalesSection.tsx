@@ -246,7 +246,7 @@ function LocalCard({ local, index, isVisible, openLightbox }: { local: Local; in
                   </DialogTitle>
                 </DialogHeader>
                 <div className="mt-4">
-                  <div className="relative group cursor-pointer" onClick={() => openLightbox(local.imagen)}>
+                  <div className="relative group cursor-pointer" onClick={(e) => { e.stopPropagation(); openLightbox(local.imagen); }}>
                     <img
                       src={local.imagen}
                       alt={local.name}
