@@ -265,9 +265,11 @@ function LocalCard({ local, index, isVisible }: { local: Local; index: number; i
                         <p className="font-display text-3xl text-[#C9A962]">
                           UF {local.precio.toLocaleString()}
                         </p>
+                        {local.descuento > 0 && (
                         <span className="font-body text-sm text-[#8B8680] line-through">
                           Antes UF {local.precioOriginal.toLocaleString()}
                         </span>
+                        )}
                       </div>
                       <div className="text-right">
                         {local.descuento > 0 && (
