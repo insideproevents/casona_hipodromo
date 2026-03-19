@@ -120,7 +120,7 @@ const locales: Local[] = [
       { label: 'Baños', value: '4' },
       { label: 'Bodega', value: '1 Subterránea' },
     ],
-    imagen: './images/1C_plano.jpg',
+    imagen: './images/casona_completa.jpg',
   },
 ];
 
