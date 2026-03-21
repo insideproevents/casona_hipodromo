@@ -124,6 +124,14 @@ export default function HistoriaSection() {
                 "El pasado ilumina el futuro"
               </span>
             </div>
+            
+            <div className="mt-6">
+              <img 
+                src="./images/carrera.jpg" 
+                alt="Carrera" 
+                className="w-full max-w-md mx-auto opacity-70 rounded-sm"
+              />
+            </div>
           </div>
         </div>
 
