@@ -127,17 +127,14 @@ export default function HistoriaSection() {
           </div>
         </div>
 
-        {/* Carrera Image */}
-        <div className="w-full my-8">
+        {/* Features Grid with Background */}
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
           <img 
             src="./images/carrera.jpg" 
             alt="Carrera" 
-            className="w-full h-auto object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
           />
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="relative z-10 col-span-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
@@ -157,6 +154,7 @@ export default function HistoriaSection() {
               </p>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>
