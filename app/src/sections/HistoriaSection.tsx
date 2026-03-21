@@ -125,11 +125,11 @@ export default function HistoriaSection() {
               </span>
             </div>
             
-            <div className="mt-6">
+            <div className="mt-12">
               <img 
                 src="./images/carrera.jpg" 
                 alt="Carrera" 
-                className="w-full max-w-md mx-auto opacity-70 rounded-sm"
+                className="w-full max-w-2xl mx-auto opacity-70 rounded-sm"
               />
             </div>
           </div>
