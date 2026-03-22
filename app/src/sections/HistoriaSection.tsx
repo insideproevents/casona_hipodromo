@@ -132,11 +132,11 @@ export default function HistoriaSection() {
             Características Únicas
           </h2>
 
-        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-48">
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-48 min-h-[900px] items-center">
           <img 
             src="./images/carrera.png" 
             alt="Carrera" 
-            className="absolute inset-0 w-full h-full object-cover opacity-80 z-0"
+            className="absolute inset-0 w-full h-full object-contain opacity-80 z-0"
           />
           <div className="relative z-10 col-span-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
