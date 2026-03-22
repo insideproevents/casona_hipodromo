@@ -132,7 +132,7 @@ export default function HistoriaSection() {
             Características Únicas
           </h2>
 
-        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-24">
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-48">
           <img 
             src="./images/carrera.png" 
             alt="Carrera" 
