@@ -138,7 +138,7 @@ export default function HistoriaSection() {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className={`card-patrimonial p-8 text-center transition-all duration-700 ${
+              className={`card-patrimonial p-8 text-center transition-all duration-700 bg-white/80 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${600 + index * 100}ms` }}
