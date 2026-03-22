@@ -134,7 +134,7 @@ export default function HistoriaSection() {
 
         <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-24">
           <img 
-            src="./images/carrera.jpg" 
+            src="./images/carrera.png" 
             alt="Carrera" 
             className="absolute inset-0 w-full h-full object-cover opacity-80 z-0"
           />
