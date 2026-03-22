@@ -128,7 +128,7 @@ export default function HistoriaSection() {
         </div>
 
         {/* Features Grid with Background */}
-        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-24">
           <img 
             src="./images/carrera.jpg" 
             alt="Carrera" 
