@@ -128,6 +128,10 @@ export default function HistoriaSection() {
         </div>
 
         {/* Features Grid with Background */}
+        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-[#C9A962] mt-4 mb-8 text-center italic">
+            Características Únicas
+          </h2>
+
         <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-24">
           <img 
             src="./images/carrera.jpg" 
